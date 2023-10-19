@@ -1,0 +1,11 @@
+.botao {
+    background: linear-gradient(94deg, #EED761 21.68%, #FFB9AF 79.85%);
+    border: 0px;
+    border-radius: 88.166px;
+    box-shadow: 0px 3.52663px 35.26627px 0px rgba(255, 185, 175, 0.50);
+    color: #FFF;
+    font-size: 21px;
+    height: 56.426px;
+    position: absolute;
+    width: 298px;
+}
