@@ -9,3 +9,17 @@
     position: absolute;
     width: 298px;
 }
+
+.card {
+    background-color: #FAFAFA;
+    border-radius: 7px;
+    filter: blur(0.6000000238418579px);
+    height: 169px;
+    width: 269px;
+}
+
+.localidade {
+    color: #122330;
+    font-size: 16.071px;
+    margin: 0px;
+}
