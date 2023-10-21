@@ -15,11 +15,18 @@
     border-radius: 7px;
     filter: blur(0.6000000238418579px);
     height: 169px;
-    width: 269px;
+    width: 239px;
 }
 
 .localidade {
     color: #122330;
     font-size: 16.071px;
     margin: 0px;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 26px;
+    position: absolute;
 }

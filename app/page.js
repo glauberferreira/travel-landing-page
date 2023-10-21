@@ -21,13 +21,23 @@ function Card({localidade, imagem}) {
   )
 }
 
+function Cards({children, x, y}) {
+  return (
+    <div style={{left: x, top: y}} className={styles.cards}>
+      {children}
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <>
       <Botao x={135} y={601.72}/>
-      <Card localidade="Hawaii" imagem={hawaii}/>
-      <Card localidade="Cyprus" imagem={cyprus}/>
-      <Card localidade="Bali" imagem={bali}/>
+      <Cards x={135} y={801}>
+        <Card localidade="Hawaii" imagem={hawaii}/>
+        <Card localidade="Cyprus" imagem={cyprus}/>
+        <Card localidade="Bali" imagem={bali}/>
+      </Cards>
     </>
   )
 }
