@@ -14,9 +14,11 @@ function Botao({x, y}) {
 function Card({localidade, imagem}) {
   return(
     <div className={styles.card}>
-        <p className={styles.localidade}>{localidade}</p>
-        <Image src={seta}/>
-        <Image src={imagem}/>
+        <div className={styles.cabecalhoCard}>
+          <p className={styles.localidade}>{localidade}</p>
+          <Image src={seta}/>
+        </div>
+        <Image src={imagem} className={styles.imagem}/>
     </div>
   )
 }

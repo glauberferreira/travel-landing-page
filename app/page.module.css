@@ -13,9 +13,10 @@
 .card {
     background-color: #FAFAFA;
     border-radius: 7px;
-    filter: blur(0.6000000238418579px);
+    filter: blur(0.2px);
     height: 169px;
     width: 239px;
+    position: relative;
 }
 
 .localidade {
@@ -26,7 +27,23 @@
 
 .cards {
     display: flex;
-    justify-content: flex-start;
     gap: 26px;
+    justify-content: flex-start;
     position: absolute;
+}
+
+.cabecalhoCard {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    left: 24px;
+    position: absolute;
+    top: 20px;
+}
+
+.imagem {
+    border-radius: 2px;
+    left: 20px;
+    position: absolute;
+    top: 52px;
 }
