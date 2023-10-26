@@ -1,6 +1,10 @@
 import './globals.css'
 import styles from './styles.module.css'
 // import { Quicksand } from 'next/font/google'
+import Image from 'next/image';
+import facebook from '../public/facebook.svg'
+import twitter from '../public/twitter.svg'
+import linkedin from '../public/linkedin.svg'
 
 export const metadata = {
   title: 'Travel Landing Page',
@@ -33,6 +37,16 @@ function Menu({children, x, y}){
   );
 }
 
+function RedesSociais({x, y}) {
+  return (
+    <div style={{left: x, top: y}} className={styles.redesSociais}>
+      <Image src={facebook}/>
+      <Image src={twitter}/>
+      <Image src={linkedin}/>
+    </div>
+  )
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -50,6 +64,9 @@ export default function RootLayout({ children }) {
         <main>
           {children}
         </main>
+        <footer>
+          <RedesSociais x={1175} y={843}/>
+        </footer>
       </body>
     </html>
   )
